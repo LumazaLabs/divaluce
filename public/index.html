@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lighting that Enhances and Inspires | Diva Luce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="assets/favicon.png" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="relative">
+      <header class="absolute bg-transparent w-full z-50">
+        <!-- lg+ -->
+        <div class="relative bg-transparent z-50">
+          <!-- <div class="absolute inset-0">
+        <img
+        class="object-cover w-full h-full"
+        src="https://cdn.rareblocks.xyz/collection/celebration/images/headers/3/coworking-space.jpg"
+            alt=""
+          />
+        </div> -->
+
+          <div class="absolute inset-0"></div>
+
+          <div class="relative px-4 mx-auto sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-20 lg:h-32">
+              <div class="flex-shrink-0">
+                <a
+                  href="index.html/#"
+                  title="Return back to the home page."
+                  class="flex"
+                >
+                  <img
+                    class="w-auto h-16 lg:h-20 py-2"
+                    id="logo"
+                    src="assets/logo.png"
+                    alt="Diva Luce Logo"
+                  />
+                </a>
+              </div>
+
+              <button
+                type="button"
+                id="menu-btn"
+                class="inline-flex w-6 h-6 text-white transition-all duration-200 rounded-md lg:hidden relative cursor-pointer"
+              >
+                <!-- <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg> -->
+                <span
+                  class="absolute top-0 left-0 w-6 h-[2px] bg-white origin-top-left transform-new transition-all"
+                ></span>
+                <span
+                  class="absolute top-2 left-0 w-6 h-[2px] bg-white transform-new"
+                ></span>
+                <span
+                  class="absolute top-4 left-0 w-6 h-[2px] bg-white origin-bottom-left transform-new transition-all"
+                ></span>
+              </button>
+
+              <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a
+                  href="#products"
+                  title="View our range of products"
+                  class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
+                >
+                  PRODUCTS
+                </a>
+
+                <a
+                  href="#distributorships"
+                  title="Join our global network of distributors."
+                  class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
+                >
+                  DISTRIBUTORS
+                </a>
+
+                <a
+                  href="#catalogue"
+                  title="Download our latest catalogue"
+                  class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
+                >
+                  DOWNLOADS
+                </a>
+
+                <a
+                  href="#contact-us"
+                  title="Let's get in touch"
+                  class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
+                >
+                  CONTACT US
+                </a>
+              </div>
+
+              <a
+                href="assets/Diva Luce Catalogue.pdf"
+                title="View the Diva Luce 2023 Catalogue"
+                target="_blank"
+                class="items-center justify-center hidden px-10 py-2 text-lg font-normal text-white transition-all duration-300 ring-2 ring-diva border border-transparent lg:inline-flex hover:bg-diva focus:bg-diva focus:drop-shadow-lg"
+                role="button"
+              >
+                2023 CATALOGUE
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- xs to lg -->
+        <nav
+          id="menu"
+          class="flex flex-col justify-between w-full h-screen px-4 pt-10 bg-[#737373] sm:px-6 lg:hidden absolute -top-[900px] right-0 z-30 overflow-y-hidden transition-all duration-500"
+        >
+          <!-- <button
+            type="button"
+            id="exit-btn"
+            class="inline-flex p-2 text-white transition-all duration-200 rounded-md focus:bg-gray-800 hover:bg-gray-800 relative cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg> 
+            <span
+              class="absolute top-0 left-0 w-6 h-1 bg-white transform-new"
+            ></span>
+            <span
+              class="absolute top-2 left-0 w-6 h-1 bg-white transform-new"
+            ></span>
+            <span
+              class="absolute top-4 left-0 w-6 h-1 bg-white transform-new"
+            ></span>
+          </button> -->
+
+          <div class="flex flex-col h-full">
+            <nav class="flex flex-col mt-10 min-[380px]:mt-20 h-full">
+              <a
+                href="#products"
+                title="View our range of products"
+                class="flex w-full py-1 tracking-wide text-2xl font-regular text-white transition-all duration-200 focus:text-opacity-70"
+              >
+                PRODUCTS
+              </a>
+
+              <a
+                href="#distributorships"
+                title="Join our global network of distributors."
+                class="flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
+              >
+                DISTRIBUTORSHIP
+              </a>
+
+              <a
+                href="#catalogue"
+                title="View and download "
+                class="flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
+              >
+                DOWNLOADS
+              </a>
+
+              <a
+                href="#contact-us"
+                title="Let's get in touch"
+                class="flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
+              >
+                CONTACT US
+              </a>
+              <a
+                href="assets/pdf/Gunter.pdf"
+                target="_blank"
+                class="pt-5 h-full w-auto self-end flex items-end pb-2"
+              >
+                <div
+                  class="min-[280px]:w-[190px] min-[320px]:w-[250px] h-auto relative"
+                >
+                  <img src="assets/gunter.webp" class="h-auto w-full" />
+                  <div
+                    class="bg-black opacity-30 absolute top-0 right-0 w-full h-full z-10"
+                  ></div>
+                </div>
+                <div class="absolute right-7 bottom-20 text-right z-50">
+                  <span
+                    class="text-xs tracking-wider font-light text-white opacity-90"
+                    >PENDANT LIGHTS</span
+                  >
+                  <h4
+                    class="text-2xl font-medium text-white uppercase leading-none"
+                  >
+                    GUNTER
+                  </h4>
+                </div>
+              </a>
+            </nav>
+
+            <div class="flex items-start justify-between py-2">
+              <h6
+                class="min-[280px]:text-[0.65rem] min-[300px]:text-xs tracking-widest font-light text-white"
+              >
+                © 1997-2023 DIVA LUCE
+              </h6>
+              <div>
+                <h6
+                  class="min-[280px]:text-[0.65rem] min-[300px]:text-xs tracking-widest font-light text-white"
+                >
+                  FOLLOW DIVA LUCE
+                </h6>
+                <div class="flex justify-end gap-2 pt-2">
+                  <!-- INSTAGRAM -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                    class="w-6 h-6 fill-white"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+
+                  <!-- FACEBOOK -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                    class="w-6 h-6 fill-white"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                    />
+                  </svg>
+
+                  <!-- LINKEDIN -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                    class="w-6 h-6 fill-white"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="overflow-hidden h-screen">
+        <img
+          src="assets/flex-plus.webp"
+          alt=""
+          class="object-cover h-full w-full"
+        />
+        <div
+          class="absolute right-0 top-0 w-full h-full bg-black opacity-20"
+        ></div>
+        <div
+          class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24"
+        >
+          <div
+            class="absolute bottom-10 left-10 text-left z-1 w-9/12 md:w-auto"
+          >
+            <h1
+              class="text-3xl font-medium text-white sm:text-4xl xl:text-5xl uppercase"
+            >
+              Flex Plus Collection
+            </h1>
+            <!-- <p
+              class="mt-2 text-base font-light text-white lg:mt-4 sm:text-lg xl:max-w-3xl"
+            >
+              Create infinites shape with our new Flex Plus range! This open
+              modular platform provides designers and home owners with complete
+              control over the look of their lighting. Take control of your
+              space.
+            </p> -->
+            <div
+              class="flex flex-col md:flex-row gap-2 justify-start mt-4 md:mt-6"
+            >
+              <a
+                href="assets/pdf/FLEX PLUS.pdf"
+                target="_blank"
+                title="View the FLEX PLUS collection."
+                class="items-center justify-center px-16 py-3 w-fit text-sm font-light text-white transition-all duration-300 bg-diva border border-transparent lg:inline-flex hover:bg-orange-600 hover:drop-shadow-md focus:bg-orange-600"
+                role="button"
+              >
+                VIEW COLLECTION
+              </a>
+              <a
+                href="#products"
+                title="View all collections"
+                class="items-center justify-center px-16 py-2 w-fit text-sm font-normal text-white transition-all duration-300 ring-inset ring-2 ring-diva lg:inline-flex hover:bg-white focus:bg-white hover:text-diva focus:text-diva hover:ring-0 focus:ring-0 hidden md:block"
+                role="button"
+              >
+                ALL COLLECTIONS
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PRODUCT CATEGORIES -->
+    <section id="products" class="py-10 sm:py-16 lg:py-20">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <h2
+          class="text-2xl font-medium sm:text-3xl xl:text-4xl text-gray-800 pb-8"
+        >
+          PRODUCT CATEGORIES
+        </h2>
+        <!-- FIRST GRID -->
+        <main
+          class="grid grid-flow-col md:grid-cols-4 overflow-x-auto overflow-y-hidden gap-5 snap-x"
+        >
+          <!-- -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Downlights.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              DOWNLIGHTS
+            </h2>
+            <p></p>
+          </div>
+          <!--  -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Ceiling lights.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              CEILING LIGHTS
+            </h2>
+            <p></p>
+          </div>
+          <!--  -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Floor lamps.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              FLOOR LAMPS
+            </h2>
+            <p></p>
+          </div>
+          <!--  -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Outdoor lights.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              OUTDOOR LIGHTS
+            </h2>
+            <p></p>
+          </div>
+        </main>
+        <!-- SECOND GRID -->
+        <main
+          class="grid grid-flow-col md:grid-cols-4 overflow-x-auto overflow-y-hidden gap-5 mt-5 snap-x"
+        >
+          <!-- -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Magnetic track.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              MAGNETIC TRACK
+            </h2>
+            <p></p>
+          </div>
+          <!--  -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Wall lights.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              LED WALL LIGHTS
+            </h2>
+            <p></p>
+          </div>
+          <!--  -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Foot lights.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              FOOT LIGHTS
+            </h2>
+            <p></p>
+          </div>
+          <!--  -->
+          <div class="w-[250px] lg:w-full h-auto snap-center">
+            <img
+              src="assets/Collection-imgs/Table lamps.jpg"
+              class="w-full h-auto"
+            />
+            <h2
+              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+            >
+              TABLE LAMPS
+            </h2>
+            <p></p>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- CATALOGUE -->
+    <section id="catalogue" class="py-20 lg:py-20 bg-white">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="relative">
+          <img src="assets/Catalogue.png" class="md:w-10/12" />
+          <div
+            class="md:absolute ml-10 md:ml-0 right-10 bottom-24 2xl:bottom-28"
+          >
+            <h4
+              class="text-lg font-medium sm:text-xl xl:text-3xl text-gray-700 uppercase"
+            >
+              2023 CATALOGUE
+            </h4>
+            <a
+              href="assets/Diva Luce Catalogue.pdf"
+              download
+              class="flex items-center gap-2 text-diva"
+            >
+              <h4
+                class="text-base leading-none tracking-wide font-light sm:text-lg xl:text-xl text-diva uppercase"
+              >
+                DOWNLOAD NOW
+              </h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="py-10 sm:py-16 lg:pb-32">
+      <div class="">
+        <div class="grid grid-flow-col overflow-x-auto gap-5 snap-x">
+          <a
+            href="assets/pdf/Gunter.pdf"
+            target="_blank"
+            class="w-[275px] md:w-[400px] h-auto relative snap-center"
+          >
+            <img src="assets/gunter.webp" class="w-full h-auto object-cover" />
+            <div
+              class="bg-black opacity-40 w-full h-full absolute top-0 right-0"
+            ></div>
+            <div class="text-wrapper absolute right-5 bottom-5 text-right">
+              <span
+                class="text-xs tracking-wider font-light text-white opacity-75"
+                >PENDANT LIGHTS</span
+              >
+              <h4
+                class="text-2xl font-medium sm:text-3xl xl:text-4xl text-white uppercase"
+              >
+                GUNTER
+              </h4>
+            </div>
+          </a>
+          <a
+            href="assets/pdf/Jungle.pdf"
+            target="_blank"
+            class="w-[275px] md:w-[400px] h-auto relative snap-center"
+          >
+            <img src="assets/jungle.webp" class="w-full h-auto object-cover" />
+            <div class="text-wrapper absolute right-5 bottom-5 text-right">
+              <span
+                class="text-xs tracking-wider font-light text-white opacity-75"
+                >WALL LIGHTS</span
+              >
+              <h4
+                class="text-2xl font-medium sm:text-3xl xl:text-4xl text-white uppercase"
+              >
+                JUNGLE
+              </h4>
+            </div>
+          </a>
+          <a
+            href="assets/pdf/Gardena.pdf"
+            target="_blank"
+            class="w-[275px] md:w-[400px] h-auto relative snap-center"
+          >
+            <img src="assets/gardena.webp" class="w-full h-auto object-cover" />
+            <div
+              class="bg-black opacity-25 w-full h-full absolute top-0 right-0"
+            ></div>
+            <div class="text-wrapper absolute right-5 bottom-5 text-right">
+              <span
+                class="text-xs tracking-wider font-light text-white opacity-75"
+                >FLOOR LAMPS</span
+              >
+              <h4
+                class="text-2xl font-medium sm:text-3xl xl:text-4xl text-white uppercase"
+              >
+                GARDENA
+              </h4>
+            </div>
+          </a>
+          <a
+            href="assets/pdf/Prato.pdf"
+            target="_blank"
+            class="w-[275px] md:w-[400px] h-auto relative snap-center"
+          >
+            <img src="assets/prato.webp" class="w-full h-auto object-cover" />
+            <div
+              class="bg-black opacity-25 w-full h-full absolute top-0 right-0"
+            ></div>
+            <div class="text-wrapper absolute right-5 bottom-5 text-right">
+              <span
+                class="text-xs tracking-wider font-light text-white opacity-75"
+                >MAGNETIC TRACK</span
+              >
+              <h4
+                class="text-2xl font-medium sm:text-3xl xl:text-4xl text-white uppercase"
+              >
+                PRATO
+              </h4>
+            </div>
+          </a>
+          <a
+            href="assets/pdf/Prato.pdf"
+            target="_blank"
+            class="w-[275px] md:w-[400px] h-auto relative snap-center"
+          >
+            <img src="assets/lecco.webp" class="w-full h-auto object-cover" />
+            <div
+              class="bg-black opacity-25 w-full h-full absolute top-0 right-0"
+            ></div>
+            <div class="text-wrapper absolute right-5 bottom-5 text-right">
+              <span
+                class="text-xs tracking-wider font-light text-white opacity-75"
+                >SPOTLIGHTS</span
+              >
+              <h4
+                class="text-2xl font-medium sm:text-3xl xl:text-4xl text-white uppercase"
+              >
+                LECCO
+              </h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISTRIBUTORS -->
+    <section id="distributorships" class="py-10 sm:py-12 lg:py-16 bg-gray-200">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-medium sm:text-3xl xl:text-4xl text-center">
+          BECOME A DISTRIBUTOR
+        </h2>
+        <!-- GRID -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 pt-12 pb-10 gap-10 justify-center items-center text-center md:text-left"
+        >
+          <div
+            class="grid grid-cols-1 min-[]: sm:grid-cols-2 grid-rows[fit-content()] gap-5"
+          >
+            <div
+              class="flex align-top gap-2 bg-[#f6f6f6] px-5 py-8 rounded-2xl drop-shadow-lg relative"
+            >
+              <div class="relative top-1 hidden md:block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div class="">
+                <h4
+                  class="text-base font-regular sm:text-lg xl:text-2xl text-gray-700 uppercase leading-none"
+                >
+                  REPUTABLE BRAND
+                </h4>
+                <p
+                  class="text-base font-light text-gray-500 lg:mt-3 lg:text-lg"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a
+                  neque architecto delectus et? Perferendis, corrupti ad amet,
+                  sit repellat modi nulla error quia ipsa velit non temporibus
+                  fuga labore.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex align-top gap-2 bg-[#F0f0f0] px-5 py-8 rounded-2xl drop-shadow-lg"
+            >
+              <div class="relative top-1 hidden md:block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div class="">
+                <h4
+                  class="text-base font-regular sm:text-lg xl:text-2xl text-gray-700 uppercase leading-none"
+                >
+                  MARKET OPPORTUNITY
+                </h4>
+                <p
+                  class="text-base font-light text-gray-500 lg:mt-3 lg:text-lg"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a
+                  neque architecto delectus et? Perferendis, corrupti ad amet,
+                  sit repellat modi nulla error quia ipsa velit non temporibus
+                  fuga labore.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex align-top justify-center sm:col-span-2 gap-2 bg-[#F0f0f0] px-5 py-8 rounded-2xl drop-shadow-lg h-fit"
+            >
+              <div class="">
+                <h4
+                  class="text-base text-center font-medium sm:text-xl xl:text-3xl text-gray-700 uppercase leading-none"
+                >
+                  JOIN OUR GLOBAL<br class="hidden md:block" />
+                  NETWORK
+                </h4>
+                <a
+                  href="#"
+                  class="mt-5 px-5 py-3 ring-1 ring-diva text-diva flex justify-center gap-1"
+                  >ENQUIRE NOW
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="assets/world-map.png" class="w-full h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="py-10">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div
+          class="div flex flex-col min-[600px]:flex-row items-center justify-between gap-5"
+        >
+          <div
+            class="div flex flex-col min-[600px]:flex-row items-center justify-evenly gap-4"
+          >
+            <a
+              href="#products"
+              class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
+            >
+              PRODUCTS
+            </a>
+            <a
+              href="#distributorships"
+              class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
+            >
+              DISTRIBUTORSHIPS
+            </a>
+            <a
+              href="#catalogue"
+              class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
+            >
+              DOWNLOADS
+            </a>
+            <a
+              href="#contact"
+              class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
+            >
+              CONTACT US
+            </a>
+          </div>
+          <h5
+            class="text-base font-regular md:text-lg xl:text-xl text-diva uppercase"
+          >
+            © 1997-2023 DIVA LUCE
+          </h5>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="animations.js"></script>
+</html>
