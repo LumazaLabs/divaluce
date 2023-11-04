@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="rand.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -88,21 +90,19 @@
                 >
                   PRODUCTS
                 </a>
-
-                <a
-                  href="#distributorships"
-                  title="Join our global network of distributors."
-                  class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
-                >
-                  DISTRIBUTORS
-                </a>
-
                 <a
                   href="#catalogue"
                   title="Download our latest catalogue"
                   class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
                 >
                   DOWNLOADS
+                </a>
+                <a
+                  href="#distributorships"
+                  title="Join our global network of distributors."
+                  class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
+                >
+                  DISTRIBUTORS
                 </a>
 
                 <a
@@ -167,31 +167,29 @@
               <a
                 href="#products"
                 title="View our range of products"
-                class="flex w-full py-1 tracking-wide text-2xl font-regular text-white transition-all duration-200 focus:text-opacity-70"
+                class="menu-text flex w-full py-1 tracking-wide text-2xl font-regular text-white transition-all duration-200 focus:text-opacity-70"
               >
                 PRODUCTS
               </a>
 
               <a
-                href="#distributorships"
-                title="Join our global network of distributors."
-                class="flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
-              >
-                DISTRIBUTORSHIP
-              </a>
-
-              <a
                 href="#catalogue"
                 title="View and download "
-                class="flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
+                class="menu-text flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
               >
                 DOWNLOADS
               </a>
-
+              <a
+                href="#distributorships"
+                title="Join our global network of distributors."
+                class="menu-text flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
+              >
+                DISTRIBUTORSHIP
+              </a>
               <a
                 href="#contact-us"
                 title="Let's get in touch"
-                class="flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
+                class="menu-text flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
               >
                 CONTACT US
               </a>
@@ -203,17 +201,23 @@
                 <div
                   class="min-[280px]:w-[190px] min-[320px]:w-[250px] h-auto relative"
                 >
-                  <img src="assets/gunter.webp" class="h-auto w-full" />
+                  <img
+                    id="src"
+                    src="assets/gunter.webp"
+                    class="h-auto w-full"
+                  />
                   <div
                     class="bg-black opacity-30 absolute top-0 right-0 w-full h-full z-10"
                   ></div>
                 </div>
                 <div class="absolute right-7 bottom-20 text-right z-50">
                   <span
+                    id="collection"
                     class="text-xs tracking-wider font-light text-white opacity-90"
                     >PENDANT LIGHTS</span
                   >
                   <h4
+                    id="title"
                     class="text-2xl font-medium text-white uppercase leading-none"
                   >
                     GUNTER
@@ -280,54 +284,160 @@
           </div>
         </nav>
       </header>
-      <section class="overflow-hidden h-screen">
-        <img
-          src="assets/flex-plus.webp"
-          alt=""
-          class="object-cover h-full w-full"
-        />
-        <div
-          class="absolute right-0 top-0 w-full h-full bg-black opacity-20"
-        ></div>
-        <div
-          class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24"
-        >
+      <section class="main-carousel h-screen relative overflow-x-hidden">
+        <div class="carousel-cell overflow-hidden h-screen w-full">
+          <img
+            src="assets/flex-plus.webp"
+            alt=""
+            class="object-cover h-full w-full"
+          />
           <div
-            class="absolute bottom-10 left-10 text-left z-1 w-9/12 md:w-auto"
+            class="absolute right-0 top-0 w-full h-full bg-black opacity-20"
+          ></div>
+          <div
+            class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24"
           >
-            <h1
-              class="text-3xl font-medium text-white sm:text-4xl xl:text-5xl uppercase"
-            >
-              Flex Plus Collection
-            </h1>
-            <!-- <p
-              class="mt-2 text-base font-light text-white lg:mt-4 sm:text-lg xl:max-w-3xl"
-            >
-              Create infinites shape with our new Flex Plus range! This open
-              modular platform provides designers and home owners with complete
-              control over the look of their lighting. Take control of your
-              space.
-            </p> -->
             <div
-              class="flex flex-col md:flex-row gap-2 justify-start mt-4 md:mt-6"
+              class="absolute bottom-10 left-10 text-left z-1 w-9/12 md:w-auto"
             >
-              <a
-                href="assets/pdf/FLEX PLUS.pdf"
-                target="_blank"
-                title="View the FLEX PLUS collection."
-                class="items-center justify-center px-16 py-3 w-fit text-sm font-light text-white transition-all duration-300 bg-diva border border-transparent lg:inline-flex hover:bg-orange-600 hover:drop-shadow-md focus:bg-orange-600"
-                role="button"
+              <h1
+                class="text-3xl font-medium text-white sm:text-4xl xl:text-5xl uppercase"
               >
-                VIEW COLLECTION
-              </a>
-              <a
-                href="#products"
-                title="View all collections"
-                class="items-center justify-center px-16 py-2 w-fit text-sm font-normal text-white transition-all duration-300 ring-inset ring-2 ring-diva lg:inline-flex hover:bg-white focus:bg-white hover:text-diva focus:text-diva hover:ring-0 focus:ring-0 hidden md:block"
-                role="button"
+                Flex Plus Collection
+              </h1>
+              <!-- <p
+                class="mt-2 text-base font-light text-white lg:mt-4 sm:text-lg xl:max-w-3xl"
               >
-                ALL COLLECTIONS
-              </a>
+                Create infinites shape with our new Flex Plus range! This open
+                modular platform provides designers and home owners with complete
+                control over the look of their lighting. Take control of your
+                space.
+              </p> -->
+              <div
+                class="flex flex-col md:flex-row gap-2 justify-start mt-4 md:mt-6"
+              >
+                <a
+                  href="assets/pdf/FLEX PLUS.pdf"
+                  target="_blank"
+                  title="View the FLEX PLUS collection."
+                  class="items-center justify-center px-16 py-3 w-fit text-sm font-light text-white transition-all duration-300 bg-diva border border-transparent lg:inline-flex hover:bg-orange-600 hover:drop-shadow-md focus:bg-orange-600"
+                  role="button"
+                >
+                  VIEW COLLECTION
+                </a>
+                <a
+                  href="#products"
+                  title="View all collections"
+                  class="items-center justify-center px-16 py-2 w-fit text-sm font-normal text-white transition-all duration-300 ring-inset ring-2 ring-diva lg:inline-flex hover:bg-white focus:bg-white hover:text-diva focus:text-diva hover:ring-0 focus:ring-0 hidden md:block"
+                  role="button"
+                >
+                  ALL COLLECTIONS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell overflow-hidden h-screen w-full">
+          <img
+            src="assets/track&spot.webp"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+          <div
+            class="absolute right-0 top-0 w-full h-full bg-black opacity-25"
+          ></div>
+          <div
+            class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24"
+          >
+            <div
+              class="absolute bottom-10 left-10 text-left z-1 w-9/12 md:w-auto"
+            >
+              <h1
+                class="text-3xl font-medium text-white sm:text-4xl xl:text-5xl uppercase"
+              >
+                Track and Spot Collection
+              </h1>
+              <!-- <p
+                class="mt-2 text-base font-light text-white lg:mt-4 sm:text-lg xl:max-w-3xl"
+              >
+                Create infinites shape with our new Flex Plus range! This open
+                modular platform provides designers and home owners with complete
+                control over the look of their lighting. Take control of your
+                space.
+              </p> -->
+              <div
+                class="flex flex-col md:flex-row gap-2 justify-start mt-4 md:mt-6"
+              >
+                <a
+                  href="assets/pdf/FLEX PLUS.pdf"
+                  target="_blank"
+                  title="View the track and spot."
+                  class="items-center justify-center px-16 py-3 w-fit text-sm font-light text-white transition-all duration-300 bg-diva border border-transparent lg:inline-flex hover:bg-orange-600 hover:drop-shadow-md focus:bg-orange-600"
+                  role="button"
+                >
+                  VIEW COLLECTION
+                </a>
+                <a
+                  href="#products"
+                  title="View all collections"
+                  class="items-center justify-center px-16 py-2 w-fit text-sm font-normal text-white transition-all duration-300 ring-inset ring-2 ring-diva lg:inline-flex hover:bg-white focus:bg-white hover:text-diva focus:text-diva hover:ring-0 focus:ring-0 hidden md:block"
+                  role="button"
+                >
+                  ALL COLLECTIONS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell overflow-hidden h-screen w-full">
+          <img
+            src="assets/pendant.webp"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+          <div
+            class="absolute right-0 top-0 w-full h-full bg-black opacity-20"
+          ></div>
+          <div
+            class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-24"
+          >
+            <div
+              class="absolute bottom-10 left-10 text-left z-1 w-9/12 md:w-auto"
+            >
+              <h1
+                class="text-3xl font-medium text-white sm:text-4xl xl:text-5xl uppercase"
+              >
+                Pendant Collection
+              </h1>
+              <!-- <p
+                class="mt-2 text-base font-light text-white lg:mt-4 sm:text-lg xl:max-w-3xl"
+              >
+                Create infinites shape with our new Flex Plus range! This open
+                modular platform provides designers and home owners with complete
+                control over the look of their lighting. Take control of your
+                space.
+              </p> -->
+              <div
+                class="flex flex-col md:flex-row gap-2 justify-start mt-4 md:mt-6"
+              >
+                <a
+                  href="assets/pdf/FLEX PLUS.pdf"
+                  target="_blank"
+                  title="View the pendant collection."
+                  class="items-center justify-center px-16 py-3 w-fit text-sm font-light text-white transition-all duration-300 bg-diva border border-transparent lg:inline-flex hover:bg-orange-600 hover:drop-shadow-md focus:bg-orange-600"
+                  role="button"
+                >
+                  VIEW COLLECTION
+                </a>
+                <a
+                  href="#products"
+                  title="View all collections"
+                  class="items-center xl justify-center px-16 py-2 w-fit text-sm font-normal text-white transition-all duration-300 ring-inset ring-2 ring-diva lg:inline-flex hover:bg-white focus:bg-white hover:text-diva focus:text-diva hover:ring-0 focus:ring-0 hidden md:block"
+                  role="button"
+                >
+                  ALL COLLECTIONS
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -776,4 +886,5 @@
     </section>
   </body>
   <script src="animations.js"></script>
+  <script src="rand.js"></script>
 </html>

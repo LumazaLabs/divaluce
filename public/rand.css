@@ -1,0 +1,67 @@
+.previous {
+  left: auto !important;
+  right: 40px;
+  background-image: url("/assets/previous.svg") !important;
+}
+
+.next {
+  background-image: url("/assets/next.svg") !important;
+  right: 15px !important;
+}
+
+@media only screen and (min-width: 1028px) {
+  .previous {
+    left: auto !important;
+    right: 120px;
+    background-image: url("/assets/previous.svg") !important;
+  }
+}
+
+@media only screen and (min-width: 1028px) {
+  .next {
+    right: 60px !important;
+    background-image: url("/assets/next.svg") !important;
+  }
+}
+.next,
+.previous {
+  width: 25px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+.flickity-prev-next-button {
+  top: auto !important;
+  background: 0 0 !important;
+  bottom: 15px;
+  z-index: 4;
+}
+
+.flickity-prev-next-button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+button {
+  margin-top: 15px;
+  border-bottom: 1px solid #fff;
+  width: 25%;
+  text-align: left;
+}
+
+.flickity-button-icon {
+  fill: #fff;
+}
+
+.flickity-button-icon:actv {
+  fill: rgba(210, 210, 210, 0.867);
+  transition: all, 300ms;
+}
