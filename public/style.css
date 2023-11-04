@@ -871,6 +871,10 @@ video {
   border-width: 1px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-transparent {
   border-color: transparent;
 }

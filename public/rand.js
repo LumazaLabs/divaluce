@@ -8,13 +8,5 @@ var flkty = new Flickity(elem, {
   draggable: true,
   freeScroll: false,
   pageDots: false,
-});
-
-// previous
-$(".button--prev").on("click", function () {
-  $carousel.flickity("previous");
-});
-// next
-$(".button--nex").on("click", function () {
-  $carousel.flickity("next");
+  autoPlay: 3000,
 });

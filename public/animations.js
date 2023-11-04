@@ -66,26 +66,30 @@ const headerProducts = [
     title: "Gunter",
     collection: "Pendant Lights",
     src: "assets/gunter.webp",
+    pdf: "assets/pdf/Gunter.pdf",
   },
   {
     title: "Jungle",
     collection: "Wall Lights",
     src: "assets/jungle.webp",
+    pdf: "assets/pdf/Jungle.pdf",
   },
   {
     title: "Gardena",
     collection: "Floor Lamps",
     src: "assets/gardena.webp",
+    pdf: "assets/pdf/Gardena.pdf",
   },
   {
     title: "Prato",
     collection: "Magnetic Track",
     src: "assets/prato.webp",
+    pdf: "assets/pdf/Prato.pdf",
   },
   {
     title: "Lecco",
     collection: "Spotlights",
-    src: "assets/lecco.webp",
+    src: "assets/Lecco.webp",
   },
 ];
 
