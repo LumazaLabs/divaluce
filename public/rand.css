@@ -1,26 +1,35 @@
-.previous {
+/* .previous {
   left: auto !important;
   right: 40px;
   background-image: url("/assets/previous.svg") !important;
+} */
+/* .next {
+  background-image: url("/assets/next.svg") !important;
+  right: 15px !important;
+} */
+
+.previous {
+  display: none;
 }
 
 .next {
-  background-image: url("/assets/next.svg") !important;
-  right: 15px !important;
+  display: none;
 }
 
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 728px) {
   .previous {
+    display: block;
     left: auto !important;
     right: 120px;
     background-image: url("/assets/previous.svg") !important;
   }
 }
 
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 728px) {
   .next {
+    display: block;
     right: 60px !important;
-    background-image: url("/assets/next.svg") !important;
+    background-image: url("/assets/chevron-right-solid.svg") !important;
   }
 }
 .next,

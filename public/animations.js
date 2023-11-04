@@ -66,30 +66,31 @@ const headerProducts = [
     title: "Gunter",
     collection: "Pendant Lights",
     src: "assets/gunter.webp",
-    pdf: "assets/pdf/Gunter.pdf",
+    href: "assets/pdf/Gunter.pdf",
   },
   {
     title: "Jungle",
     collection: "Wall Lights",
     src: "assets/jungle.webp",
-    pdf: "assets/pdf/Jungle.pdf",
+    href: "assets/pdf/Jungle.pdf",
   },
   {
     title: "Gardena",
     collection: "Floor Lamps",
     src: "assets/gardena.webp",
-    pdf: "assets/pdf/Gardena.pdf",
+    href: "assets/pdf/Gardena.pdf",
   },
   {
     title: "Prato",
     collection: "Magnetic Track",
     src: "assets/prato.webp",
-    pdf: "assets/pdf/Prato.pdf",
+    href: "assets/pdf/Prato.pdf",
   },
   {
     title: "Lecco",
     collection: "Spotlights",
-    src: "assets/Lecco.webp",
+    src: "assets/lecco.webp",
+    pdf: "assets/pdf/Lecco.pdf",
   },
 ];
 
@@ -114,6 +115,7 @@ menuBtn.addEventListener("click", () => {
     document.querySelector("#collection").textContent =
       headerProducts[num].collection;
     document.querySelector("#src").src = headerProducts[num].src;
+    document.querySelector("#href").href = headerProducts[num].href;
     choice++;
   } else {
     choice = 0;
