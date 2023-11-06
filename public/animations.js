@@ -24,11 +24,11 @@ const menuText = document.querySelectorAll(".menu-text");
 // });
 
 menuBtn.addEventListener("click", () => {
-  if (menu.classList.contains("-top-[900px]")) {
+  if (menu.classList.contains("-top-[1500px]")) {
     // menu.classList.remove("hidden");
-    menu.classList.remove("-top-[900px]");
+    menu.classList.remove("-top-[1500px]");
     menu.classList.add("top-0");
-    logo.src = "assets/logo-white.png";
+    logo.src = "/public/assets/logo-white.png";
     menuBtn.firstElementChild.classList.add("rotate-45");
     middleChild.classList.add("hidden");
     menuBtn.lastElementChild.classList.add("-rotate-45");
@@ -36,8 +36,8 @@ menuBtn.addEventListener("click", () => {
     // menu.classList.add("hidden");
     // menuToggle();
     menu.classList.remove("top-0");
-    menu.classList.add("-top-[900px]");
-    logo.src = "assets/logo.png";
+    menu.classList.add("-top-[1500px]");
+    logo.src = "/public/assets/logo.png";
     menuBtn.firstElementChild.classList.remove("rotate-45");
     middleChild.classList.remove("hidden");
     menuBtn.lastElementChild.classList.remove("-rotate-45");
@@ -47,8 +47,8 @@ menuBtn.addEventListener("click", () => {
 menuText.forEach((item) => {
   item.addEventListener("click", () => {
     menu.classList.remove("top-0");
-    menu.classList.add("-top-[900px]");
-    logo.src = "assets/logo.png";
+    menu.classList.add("-top-[1500px]");
+    logo.src = "/public/assets/logo.png";
     menuBtn.firstElementChild.classList.remove("rotate-45");
     middleChild.classList.remove("hidden");
     menuBtn.lastElementChild.classList.remove("-rotate-45");
@@ -65,32 +65,32 @@ const headerProducts = [
   {
     title: "Gunter",
     collection: "Pendant Lights",
-    src: "assets/gunter.webp",
-    href: "assets/pdf/Gunter.pdf",
+    src: "/public/assets/gunter.webp",
+    href: "/public/assets/pdf/Gunter.pdf",
   },
   {
     title: "Jungle",
     collection: "Wall Lights",
-    src: "assets/jungle.webp",
-    href: "assets/pdf/Jungle.pdf",
+    src: "/public/assets/jungle.webp",
+    href: "/public/assets/pdf/Jungle.pdf",
   },
   {
     title: "Gardena",
     collection: "Floor Lamps",
-    src: "assets/gardena.webp",
-    href: "assets/pdf/Gardena.pdf",
+    src: "/public/assets/gardena.webp",
+    href: "/public/assets/pdf/Gardena.pdf",
   },
   {
     title: "Prato",
     collection: "Magnetic Track",
-    src: "assets/prato.webp",
-    href: "assets/pdf/Prato.pdf",
+    src: "/public/assets/prato.webp",
+    href: "/public/assets/pdf/Prato.pdf",
   },
   {
     title: "Lecco",
     collection: "Spotlights",
-    src: "assets/lecco.webp",
-    pdf: "assets/pdf/Lecco.pdf",
+    src: "/public/assets/lecco.webp",
+    href: "/public/assets/pdf/Lecco.pdf",
   },
 ];
 

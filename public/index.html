@@ -17,9 +17,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="icon" href="assets/favicon.png" />
+    <link rel="icon" href="/public/assets/favicon.png" />
   </head>
   <body>
+    <script
+      type="text/javascript"
+      src="https://app.termly.io/embed.min.js"
+      data-auto-block="on"
+      data-website-uuid="a78f29fc-606b-4de5-a7f4-8ce402efc3c6"
+    ></script>
     <!-- HEADER -->
     <div class="relative">
       <header class="absolute bg-transparent w-full z-50">
@@ -31,7 +37,7 @@
             <nav class="flex items-center justify-between h-20 lg:h-32">
               <div class="flex-shrink-0">
                 <a
-                  href="index.html/#"
+                  href="index.html"
                   title="Return back to the home page."
                   class="flex"
                 >
@@ -84,7 +90,7 @@
                 </a>
 
                 <a
-                  href="#contact-us"
+                  href="contact.html"
                   title="Let's get in touch"
                   class="text-base font-light text-white hover:text-orange-100 active:text-orange-100 transition-all"
                 >
@@ -108,7 +114,7 @@
         <!-- xs to lg -->
         <nav
           id="menu"
-          class="flex flex-col justify-between w-full h-screen px-4 pt-10 bg-[#737373] sm:px-6 lg:hidden absolute -top-[900px] right-0 z-30 overflow-y-hidden transition-all duration-500"
+          class="flex flex-col justify-between w-full h-screen px-4 pt-10 bg-[#737373] sm:px-6 lg:hidden absolute -top-[1500px] right-0 z-10 overflow-y-hidden transition-all duration-300"
         >
           <div class="flex flex-col h-full">
             <nav class="flex flex-col mt-10 min-[380px]:mt-20 h-full">
@@ -135,7 +141,7 @@
                 DISTRIBUTORSHIP
               </a>
               <a
-                href="#contact-us"
+                href="contact.html"
                 title="Let's get in touch"
                 class="menu-text flex w-full py-1 font-regular text-white tracking-wide text-2xl transition-all duration-200 focus:text-opacity-70"
               >
@@ -143,6 +149,7 @@
               </a>
               <a
                 href="assets/pdf/Gunter.pdf"
+                id="href"
                 target="_blank"
                 class="pt-5 h-full w-auto self-end flex items-end pb-2"
               >
@@ -406,114 +413,134 @@
           class="grid grid-flow-col md:grid-cols-4 overflow-x-auto overflow-y-hidden gap-5 snap-x"
         >
           <!-- -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/downlights.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Downlights.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               DOWNLIGHTS
             </h2>
-            <p></p>
-          </div>
+          </a>
           <!--  -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/ceiling-lights.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Ceiling lights.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               CEILING LIGHTS
             </h2>
-            <p></p>
-          </div>
+          </a>
           <!--  -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/floor-lamps.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Floor lamps.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               FLOOR LAMPS
             </h2>
-            <p></p>
-          </div>
+          </a>
           <!--  -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/outdoor-lights.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Outdoor lights.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               OUTDOOR LIGHTS
             </h2>
-            <p></p>
-          </div>
+          </a>
         </main>
         <!-- SECOND GRID -->
         <main
           class="grid grid-flow-col md:grid-cols-4 overflow-x-auto overflow-y-hidden gap-5 mt-5 snap-x"
         >
           <!-- -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/magnetic-track.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Magnetic track.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               MAGNETIC TRACK
             </h2>
             <p></p>
-          </div>
+          </a>
           <!--  -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/wall-lights.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Wall lights.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               LED WALL LIGHTS
             </h2>
             <p></p>
-          </div>
+          </a>
           <!--  -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/pendant-lights.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
-              src="assets/Collection-imgs/Foot lights.jpg"
+              src="assets/Collection-imgs/Pendant-lights/Rosa-2.png"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
-              FOOT LIGHTS
+              PENDANT LIGHTS
             </h2>
             <p></p>
-          </div>
+          </a>
           <!--  -->
-          <div class="w-[250px] lg:w-full h-auto snap-center">
+          <a
+            href="/public/collections/table-lamps.html"
+            class="w-[250px] lg:w-full h-auto snap-center"
+          >
             <img
               src="assets/Collection-imgs/Table lamps.jpg"
               class="w-full h-auto"
             />
             <h2
-              class="text-base font-medium sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
+              class="text-base font-regular sm:text-lg xl:text-xl text-diva uppercase text-center pt-2"
             >
               TABLE LAMPS
             </h2>
             <p></p>
-          </div>
+          </a>
         </main>
       </div>
     </section>
@@ -712,10 +739,9 @@
                 <p
                   class="text-base font-light text-gray-500 lg:mt-3 lg:text-lg"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a
-                  neque architecto delectus et? Perferendis, corrupti ad amet,
-                  sit repellat modi nulla error quia ipsa velit non temporibus
-                  fuga labore.
+                  Join a brand that has over 30 years of history and experience
+                  in the lighting industry. Stand on our shoulders as we lift
+                  you and your customers to higher heights.
                 </p>
               </div>
             </div>
@@ -747,10 +773,9 @@
                 <p
                   class="text-base font-light text-gray-500 lg:mt-3 lg:text-lg"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a
-                  neque architecto delectus et? Perferendis, corrupti ad amet,
-                  sit repellat modi nulla error quia ipsa velit non temporibus
-                  fuga labore.
+                  With Diva Luce's European look and quality, but a price point
+                  much lower than many other luxury European brands, break into
+                  markets full of opportunity and potential customers.
                 </p>
               </div>
             </div>
@@ -765,7 +790,7 @@
                   NETWORK
                 </h4>
                 <a
-                  href="#"
+                  href="/public/contact.html"
                   class="mt-5 px-5 py-3 ring-1 ring-diva text-diva flex justify-center gap-1"
                   >ENQUIRE NOW
                   <svg
@@ -795,35 +820,42 @@
     <section class="py-10">
       <div class="px-4 mx-auto sm:px-6 lg:px-8">
         <div
-          class="div flex flex-col min-[600px]:flex-row items-center justify-between gap-5"
+          class="div flex flex-col lg:flex-row items-center justify-between gap-5"
         >
           <div
-            class="div flex flex-col min-[600px]:flex-row items-center justify-evenly gap-4"
+            class="div flex flex-col lg:flex-row items-center justify-evenly gap-4"
           >
             <a
-              href="#products"
+              href="/public/index.html#products"
               class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
             >
               PRODUCTS
             </a>
             <a
-              href="#distributorships"
+              href="/public/index.html#distributorships"
               class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
             >
               DISTRIBUTORSHIPS
             </a>
             <a
-              href="#catalogue"
+              href="/public/index.html#catalogue"
               class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
             >
               DOWNLOADS
             </a>
             <a
-              href="#contact"
+              href="/public/contact.html"
               class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
             >
               CONTACT US
             </a>
+            <a
+              href="#"
+              class="text-base font-regular md:text-lg xl:text-xl text-gray-700 uppercase"
+              onclick="window.displayPreferenceModal();return false;"
+              id="termly-consent-preferences"
+              >Consent Preferences</a
+            >
           </div>
           <h5
             class="text-base font-regular md:text-lg xl:text-xl text-diva uppercase"
