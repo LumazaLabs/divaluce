@@ -65,32 +65,32 @@ const headerProducts = [
   {
     title: "Gunter",
     collection: "Pendant Lights",
-    src: "/public/assets/gunter.webp",
-    href: "/public/assets/pdf/Gunter.pdf",
+    src: "/assets/gunter.webp",
+    href: "/assets/pdf/Gunter.pdf",
   },
   {
     title: "Jungle",
     collection: "Wall Lights",
-    src: "/public/assets/jungle.webp",
-    href: "/public/assets/pdf/Jungle.pdf",
+    src: "/assets/jungle.webp",
+    href: "/assets/pdf/Jungle.pdf",
   },
   {
     title: "Gardena",
     collection: "Floor Lamps",
-    src: "/public/assets/gardena.webp",
-    href: "/public/assets/pdf/Gardena.pdf",
+    src: "/assets/gardena.webp",
+    href: "/assets/pdf/Gardena.pdf",
   },
   {
     title: "Prato",
     collection: "Magnetic Track",
-    src: "/public/assets/prato.webp",
-    href: "/public/assets/pdf/Prato.pdf",
+    src: "/assets/prato.webp",
+    href: "/assets/pdf/Prato.pdf",
   },
   {
     title: "Lecco",
     collection: "Spotlights",
-    src: "/public/assets/lecco.webp",
-    href: "/public/assets/pdf/Lecco.pdf",
+    src: "/assets/lecco.webp",
+    href: "/assets/pdf/Lecco.pdf",
   },
 ];
 
