@@ -728,6 +728,10 @@ video {
   height: 100vh;
 }
 
+.h-3\/5 {
+  height: 60%;
+}
+
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -765,8 +769,20 @@ video {
   width: 100%;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-5 {
+  max-width: 1.25rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-shrink-0 {
@@ -875,12 +891,12 @@ video {
   gap: 0.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-24 {
+  gap: 6rem;
 }
 
-.gap-32 {
-  gap: 8rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -893,10 +909,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-24 {
-  gap: 6rem;
 }
 
 .gap-y-12 {
@@ -1130,6 +1142,10 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -1531,6 +1547,11 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1550,6 +1571,14 @@ video {
     width: auto;
   }
 
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .md\:max-w-2xl {
+    max-width: 42rem;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1564,6 +1593,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .md\:text-left {
@@ -1629,12 +1662,24 @@ video {
     width: 100%;
   }
 
+  .lg\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .lg\:max-w-3xl {
+    max-width: 48rem;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-1 {
@@ -1689,6 +1734,10 @@ video {
     padding-bottom: 8rem;
   }
 
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1698,6 +1747,10 @@ video {
 @media (min-width: 1280px) {
   .xl\:max-w-3xl {
     max-width: 48rem;
+  }
+
+  .xl\:max-w-5xl {
+    max-width: 64rem;
   }
 
   .xl\:text-2xl {
@@ -1718,6 +1771,11 @@ video {
   .xl\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .xl\:text-xl {
