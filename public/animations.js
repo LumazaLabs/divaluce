@@ -63,34 +63,34 @@ function menuToggle() {
 
 const headerProducts = [
   {
-    title: "Gunter",
-    collection: "Pendant Lights",
-    src: "/assets/gunter.webp",
-    href: "/assets/pdf/Gunter.pdf",
+    title: "CANDLE",
+    collection: "FLOOR LAMPS",
+    src: "/assets/product-imgs/Floor-lamps/CANDLE Table & Floor.png",
+    href: "/assets/pdf/Floor-lamps/CANDLE.pdf",
   },
   {
-    title: "Jungle",
-    collection: "Wall Lights",
-    src: "/assets/jungle.webp",
-    href: "/assets/pdf/Jungle.pdf",
+    title: "OMRI",
+    collection: "CEILING LIGHTS",
+    src: "/assets/product-imgs/Ceiling-lights/OMRI Ceiling.png",
+    href: "/assets/pdf/Ceiling-lights/OMRI.pdf",
   },
   {
-    title: "Gardena",
-    collection: "Floor Lamps",
-    src: "/assets/gardena.webp",
-    href: "/assets/pdf/Gardena.pdf",
+    title: "ALBA",
+    collection: "DOWNLIGHTS",
+    src: "/assets/product-imgs/Downlights/ALB.png",
+    href: "/assets/pdf/Downlights/ALBA.pdf",
   },
   {
-    title: "Prato",
-    collection: "Magnetic Track",
-    src: "/assets/prato.webp",
+    title: "MACARON",
+    collection: "TABLE LAMPS",
+    src: "/assets/product-imgs/Table-lamps/MACARON Table.png",
     href: "/assets/pdf/Prato.pdf",
   },
   {
-    title: "Lecco",
-    collection: "Spotlights",
-    src: "/assets/lecco.webp",
-    href: "/assets/pdf/Lecco.pdf",
+    title: "HALO",
+    collection: "PENDANT LIGHTS",
+    src: "/assets/product-imgs/Pendant-lights/HALO Pendant.png",
+    href: "/assets/pdf/Pendant-lights/HALO.pdf",
   },
 ];
 
